@@ -7,5 +7,12 @@
     /*text*/
     --color-text-primary:#000;
     --color-text-link: #23279a;
-    --color-danger-300: #a42323
+    --color-danger-300: #a42323;
+    /*button*/
+    --color-button-primary-100:#fff;
+    --color-button-primary-300:#6E41E20A;
+    --color-button-primary-500:#6E41E229;
+    /*input*/
+    --color-input-primary-100:#fff;
+    --color-input-primary-300: rgba(0, 0, 0, 0.5);
 }

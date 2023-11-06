@@ -5,9 +5,35 @@
     font: inherit;
     text-align: inherit;
     outline: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+
 }
 
 .primary {
+    border: 2px solid  var(--color-primary-500);
     background-color: var(--color-primary-500);
-
+    color: var( --color-button-primary-100);
+}
+.primary:hover{
+    background-color: var(--color-primary-700);
+    border-color: var(--color-primary-700);
+    box-shadow: 0px 2px 4px var(--color-primary-700);
+}
+.primary:active{
+    background-color: var(--color-primary-900);
+    border-color: var(--color-primary-900);
+}
+.secondary {
+    border: 2px solid  var(--color-primary-500);
+    color: var(--color-primary-500);
+}
+.secondary:hover{
+    background-color: var(--color-button-primary-300);
+    border-color: var(--color-primary-500);
+    box-shadow: 0px 2px 4px var(--color-primary-500)
+}
+.secondary:active{
+    background-color: var(--color-button-primary-500);
+    border-color: var(--color-primary-500);
 }
