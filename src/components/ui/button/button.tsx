@@ -1,12 +1,12 @@
-import React, {ComponentProps} from "react";
+import React, {ComponentProps, ReactNode} from "react";
 import s from "./button.module.css";
 import {Typography} from "../typography";
 
 type ButtonPropsType = {
-    title: string;
+    children: ReactNode
     variant?: "primary" | "secondary"
 
 } & ComponentProps<"button">
-export const Button = ({title, variant = "primary", ...restProps}: ButtonPropsType) => {
-    return <button className={`${s.button} ${s[variant]}`} {...restProps}><Typography>{title}</Typography></button>;
+export const Button = ({children, variant = "primary", ...restProps}: ButtonPropsType) => {
+    return <button className={`${s.button} ${s[variant]}`} {...restProps}><Typography>{children}</Typography></button>;
 };
